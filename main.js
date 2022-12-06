@@ -13,11 +13,7 @@ app.on('ready', function(){
     
     mainWindow = new BrowserWindow({});
     
-    mainWindow.loadURL(url.format({
-      pathname: path.join(messages.android.com),
-      protocol: 'http:',
-      slashes:true
-    }));
+    mainWindow.loadURL(`https://messages.google.com/web/authentication`);
     
     mainWindow.on('closed', function(){
       app.quit();
